@@ -23,7 +23,8 @@ class Form{
         this.reset.mousePressed(()=>{
             db.ref('/').set({
                 playerCount : 0,
-                gameState : 0
+                gameState : 0,
+                carsAtEnd : 0
             })
             location.reload()
         })
